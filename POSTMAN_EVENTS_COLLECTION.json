@@ -1,0 +1,200 @@
+{
+  "info": {
+    "_postman_id": "c0f5af13-bca5-4230-9ac0-e55cf25d4da9",
+    "name": "events collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "26539882",
+    "_collection_link": "https://universal-sunset-574409.postman.co/workspace/77d9e7aa-0c79-4d68-8389-12c6405c9519/collection/26539882-c0f5af13-bca5-4230-9ac0-e55cf25d4da9?action=share&creator=26539882&source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get Events",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
+        "url": {
+          "raw": "localhost:3000/api/v3/events?uid=28",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v3", "events"],
+          "query": [
+            {
+              "key": "uid",
+              "value": "28"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Event",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/api/v3/events",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v3", "events"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get a single event",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/api/v3/events/648ea001a6d8bed6ce1518f1",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v3", "events", "648ea001a6d8bed6ce1518f1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update event",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"Fashion Show\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/api/v3/events/64929a3df860a6f91cb7d17e",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v3", "events", "64929a3df860a6f91cb7d17e"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Event",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/api/v3/events/64929a3df860a6f91cb7d17e",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v3", "events", "64929a3df860a6f91cb7d17e"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Filtering Events by type, rigor_rank etc",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/api/v3/events?type=event&rigor_rank=3",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v3", "events"],
+          "query": [
+            {
+              "key": "type",
+              "value": "event"
+            },
+            {
+              "key": "rigor_rank",
+              "value": "3"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Sort the events by name or any data field",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/api/v3/events?sort=name",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v3", "events"],
+          "query": [
+            {
+              "key": "sort",
+              "value": "name"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Only selecting the required fields from Events",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/api/v3/events?fields=uid,name,category,rigor_rank",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v3", "events"],
+          "query": [
+            {
+              "key": "fields",
+              "value": "uid,name,category,rigor_rank"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Using page and limit to the Events",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/api/v3/events?page=3&limit=10",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v3", "events"],
+          "query": [
+            {
+              "key": "page",
+              "value": "3"
+            },
+            {
+              "key": "limit",
+              "value": "10"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
