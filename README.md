@@ -7,12 +7,12 @@ Update: Updates an existing event by sending a PUT request to /events/:obj_id.
 Delete: Deletes an event by ID using a DELETE request to /events/:obj_id.
 
 Additional Features:
-Filtering: The API supports filtering events based on any data field.
-Sorting: Events can be sorted based on a specific field.
-Field Selection: Users can select the desired fields to include in the API response.
-Pagination: Events can be paginated to retrieve a specific subset of results.
-Limiting: Users can specify the maximum number of events to retrieve per request.
-Error Handling: Improved error handling for better user experience.
+01). Filtering: The API supports filtering events based on any data field.
+02). Sorting: Events can be sorted based on a specific field.
+03). Field Selection: Users can select the desired fields to include in the API response.
+04). Pagination: Events can be paginated to retrieve a specific subset of results.
+05). Limiting: Users can specify the maximum number of events to retrieve per request.
+06). Error Handling: Improved error handling for better user experience.
 Please refer to the API documentation for detailed usage instructions.
 
 Getting Started
@@ -20,7 +20,7 @@ Clone the repository.
 Install dependencies using npm install.
 Set up the MongoDB connection by providing the connection string in the .env file.
 Start the server using npm start.
-Access the API at http://localhost:3000.
+Access the API at localhost:3000/api/v3/events.
 Please ensure that you have Node.js and MongoDB installed on your machine before running the API.
 
 For further details and examples, please refer to the API endpoints described in the documentation.
